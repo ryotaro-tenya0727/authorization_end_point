@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
-  use_doorkeeper do
-    # controllers :authorizations => 'custom_applications'
-  end
+  use_doorkeeper
 
   namespace :api do
     namespace :v1 do
