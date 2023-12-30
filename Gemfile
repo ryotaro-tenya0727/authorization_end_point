@@ -27,6 +27,7 @@ gem "stimulus-rails"
 gem "jbuilder"
 # gem 'devise', '~> 4.9', '>= 4.9.3'
 gem 'doorkeeper', '~> 5.6', '>= 5.6.8'
+gem 'devise', '~> 4.9', '>= 4.9.3'
 gem 'pry-rails'
 
 # Use Redis adapter to run Action Cable in production
