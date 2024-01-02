@@ -29,6 +29,7 @@ gem "jbuilder"
 gem 'doorkeeper', '~> 5.6', '>= 5.6.8'
 gem 'devise', '~> 4.9', '>= 4.9.3'
 gem 'pry-rails'
+gem 'rack-cors', '~> 2.0', '>= 2.0.1'
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
