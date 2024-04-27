@@ -11,12 +11,17 @@ Doorkeeper.configure do
     # Put your resource owner authentication logic here.
     # Example implementation:
     #   User.find_by(id: session[:user_id]) || redirect_to(new_user_session_url)
-    current_user || warden.authenticate!(scope: :user)
+    current_user || redirect_to(new_user_session_path)
   end
 
   admin_authenticator do |_routes|
 
   end
+
+  default_scopes :public
+
+  # other available scopes
+  optional_scopes :admin, :write
 
   # If you didn't skip applications controller from Doorkeeper routes in your application routes.rb
   # file then you need to declare this block in order to restrict access to the web interface for
